@@ -1,0 +1,70 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+@media (min-width: 65rem) {
+    .grid {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+.flex {
+    display: flex;
+    gap: .25em;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.card {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    gap: 1em;
+}
+
+.granite-bg {
+    background-image: url(/assets/granite.png);
+    background-size: contain;
+}
+
+@keyframes granite-move {
+  from {
+    background-position: 0 0, 10px 0, 10px -10px, 0px 10px;
+  }
+  to {
+    background-position: 20px 20px, 30px 20px, 30px 10px, 20px 30px;
+  }
+}
+
+a.featured {
+    position: relative;
+    z-index: 1;
+}
+
+a.featured::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: .4em;
+    width: 106%;
+    background-color: var(--color-accent);
+    transform: translate(-3%, -.5em);
+    z-index: -1;
+    transition: all .25s ease-in-out;
+}
+
+a.featured:hover::after{
+    height: 1.2em;
+    background-color: var(--color-accent);
+    transform: translate(-3%, -1.1em);
+    z-index: -1;
+}

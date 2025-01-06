@@ -1,0 +1,269 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-dark);
+}
+
+:root {
+    --color-dark: #040F0F;
+    --color-darker: #090B0B;
+    --color-accent: #2BA84A;
+    --color-light: #ECEBF3;
+}
+
+.bg-darker {
+    background-color: var(--color-darker);
+    color: var(--color-light);
+}
+
+.bg-dark {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.bg-light {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+img {
+    max-width: 100%;
+    border-radius: .5rem;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ------------- HEADER ---------------- */
+
+header {
+    background-color: var(--color-dark);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10lvh;
+}
+
+/* ------------- /HEADER ---------------- */
+
+
+/* ------------- HERO ---------------- */
+#hero .grid {
+    gap: 1rem;
+}
+
+#hero h1,
+#hero figure,
+#hero p {
+    grid-column: span 6;
+}
+
+#hero figure {
+    transform: translateX(-15%);
+}
+
+
+@media (min-width: 65rem) {
+    #hero h1 {
+        grid-row: 1/2;
+        grid-column: 5/12;
+        z-index: 1;
+        padding-top: 7rem;
+    }
+
+    #hero figure {
+        grid-row: 1/2;
+        grid-column: 1/7;
+        padding-top: 8rem;
+        transform: translateX(0%);
+    }
+
+    #hero p {
+        grid-row: 1/2;
+        grid-column: 7/12;
+        z-index: 1;
+        padding-top: 20rem;
+    }
+}
+
+/* ------------- /HERO ---------------- */
+
+/* ------------- CLINIC ---------------- */
+
+#clinic .primary-grid {
+    align-content: end;
+}
+
+#clinic .primary-grid__first {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    z-index: 1;
+}
+
+#clinic .primary-grid__first img {
+    margin-top: 50%;
+}
+
+#clinic .primary-grid__second {
+    grid-row: 1/2;
+    grid-column: 3/7;
+    z-index: 0;
+}
+
+#clinic .secondary-grid {
+    grid-row: 2/3;
+    margin-top: -2em;
+    z-index: 2;
+    grid-column: span 6;
+    gap: 1em;
+}
+
+#clinic .secondary-grid h2,
+#clinic .secondary-grid a {
+    grid-column: span 6;
+}
+
+#clinic .secondary-grid a {
+    width: max-content;
+}
+
+#clinic .secondary-grid .flex {
+    grid-column: span 6;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#clinic .secondary-grid p {
+    max-width: 640px;
+}
+
+@media (min-width: 65rem) {
+    #clinic .primary-grid__first {
+        grid-column: 1/7;
+    }
+
+    #clinic .primary-grid__second {
+        grid-column: 6/13;
+    }
+
+    #clinic .secondary-grid {
+        grid-column: span 12;
+    }
+
+    #clinic .secondary-grid h2,
+    #clinic .secondary-grid a,
+    #clinic .secondary-grid .flex {
+        grid-column: span 12;
+    }
+
+    #clinic .secondary-grid h2 {
+        margin-top: -.25em;
+    }
+}
+
+
+/* ------------- /CLINIC ---------------- */
+
+/* ------------- TEAM ---------------- */
+#team .primary-grid h2 {
+    grid-column: span 6;
+}
+
+#team .secondary-grid {
+    margin-top: 4rem;
+    grid-column: span 6;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+#team .secondary-grid li:nth-child(even) {
+    transform: translateY(-4rem);
+}
+
+#team .secondary-grid img {
+    object-fit: cover;
+    aspect-ratio: 8/9;
+}
+
+@media (min-width: 65rem) {
+    #team .secondary-grid {
+        grid-column: span 12;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6rem;
+    }
+
+#team .primary-grid h2 {
+    grid-column: span 12;
+}
+
+}
+
+/* ------------- /TEAM ---------------- */
+
+/* ------------- STEPS ---------------- */
+#steps .grid h3 {
+    grid-column: span 6;
+}
+
+#steps .primary-grid {
+    gap: 2rem;
+}
+
+#steps .secondary-grid {
+    grid-column: span 6;
+    gap: 2rem;
+}
+
+#steps .secondary-grid .card {
+    grid-column: span 6;
+}
+
+@media (min-width: 65rem) {
+#steps .secondary-grid {
+    grid-column: span 12;
+    gap: 4rem;
+}
+    #steps .secondary-grid .card {
+        grid-column: 3/7;
+    }
+
+    #steps .secondary-grid .card:nth-child(2) {
+        grid-column: 7/12;
+        grid-row: 2/3;
+    }
+
+    #steps .secondary-grid .card:nth-child(3) {
+        grid-column: 3/7;
+        grid-row: 3/4;
+    }
+}
+
+/* ------------- /STEPS ---------------- */
