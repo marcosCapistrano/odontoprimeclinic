@@ -72,6 +72,28 @@ header nav {
     height: 10lvh;
 }
 
+header .navbuttons {
+    display: none;
+}
+
+header .logo {
+    max-width: 140px;
+}
+
+@media (min-width: 65rem) {
+
+header .logo {
+    max-width: 300px;
+}
+    header .navbuttons {
+        display: block;
+    }
+
+    header .menu {
+        display: none;
+    }
+}
+
 /* ------------- /HEADER ---------------- */
 
 
@@ -267,3 +289,17 @@ header nav {
 }
 
 /* ------------- /STEPS ---------------- */
+
+/* ------------- CONTACT ---------------- */
+
+#contact .grid {
+    gap: 2rem;
+}
+
+#contact .grid .left,
+#contact .grid .right {
+    grid-column: span 6;
+    gap: 1rem;
+}
+
+/* ------------- /CONTACT ---------------- */

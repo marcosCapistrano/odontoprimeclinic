@@ -19,7 +19,7 @@
 }
 
 .container {
-    max-width: 100rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -67,4 +67,19 @@ a.featured:hover::after{
     background-color: var(--color-accent);
     transform: translate(-3%, -1.1em);
     z-index: -1;
+}
+
+a.featured-inline {
+    transition: color .15s ease-in;
+}
+
+a.featured-inline:hover {
+    color: var(--color-accent);
+}
+
+a.button {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+    padding: .5em .75em;
+    border-radius: 8px;
 }
