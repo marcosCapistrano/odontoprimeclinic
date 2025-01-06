@@ -1,12 +1,18 @@
 const callback = (entries, observer) => {
-
-const after = document.querySelector("#hero .cover");
-after.classList.add("darkene")
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = "1.0";
+        }
+    });
 };
 
-const observer = new IntersectionObserver(callback, {threshold: 1.0});
+const observer = new IntersectionObserver(callback, {
+    root: null,
+    threshold: 0.4,
+    rootMargin: "1px"
+});
 
-const target = document.querySelector("#hero");
-observer.observe(target);
-
-console.log(observer)
+const targets = document.querySelectorAll("section");
+targets.forEach(target => {
+    observer.observe(target);
+});

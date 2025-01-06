@@ -46,6 +46,8 @@ figure {
 section {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
 }
 
 ul {
