@@ -20,13 +20,26 @@
     <header class="bg-darker">
         <nav class="container">
             <img src="assets/logo/logo-mobile.svg" alt="Odonto Prime Clinic" class="logo">
-            <div class="navbuttons flex">
-                <a href="tel:35998297477" class="button fs-1">(35) 998297477</a>
-                <a href="https://web.whatsapp.com/send/?phone=5535998297477&text=Ol%C3%A1%2C+vim+do+site+de+voc%C3%AAs+e+queria+entrar+em+contato&type=phone_number&app_absent=0" class="button fs-1">Marque sua Consulta</a>
+            <div class="nav bg-dark">
+                <ul class="navlinks flex">
+                    <li><a href="/clinica.html">A Clínica</a></li>
+                    <li><a href="/tratamentos.html">Tratamentos</a></li>
+                </ul>
+                <ul class="navbuttons flex">
+                    <li>
+                        <a href="tel:35998297477" class="button fs-1">(35) 998297477</a>
+                    </li>
+                    <li>
+                        <a href="https://web.whatsapp.com/send/?phone=5535998297477&text=Ol%C3%A1%2C+vim+do+site+de+voc%C3%AAs+e+queria+entrar+em+contato&type=phone_number&app_absent=0"
+                            target="_blank" class="button fs-1">Marque sua Consulta</a>
+                    </li>
+                </ul>
             </div>
-            <img src="assets/menu.svg" alt="Menu" class="menu">
+            <img src="assets/menu.svg" alt="Menu" class="menu" onclick="menuClick()">
         </nav>
     </header>
+
+    <script src="menu.js"></script>
 
     <section id="hero" class="bg-dark">
         <div class="grid container">

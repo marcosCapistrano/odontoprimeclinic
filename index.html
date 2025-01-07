@@ -20,13 +20,25 @@
     <header class="bg-darker">
         <nav class="container">
             <img src="assets/logo/logo-mobile.svg" alt="Odonto Prime Clinic" class="logo">
-            <div class="navbuttons flex">
-                <a href="tel:35998297477" class="button fs-1">(35) 998297477</a>
-                <a href="https://web.whatsapp.com/send/?phone=5535998297477&text=Ol%C3%A1%2C+vim+do+site+de+voc%C3%AAs+e+queria+entrar+em+contato&type=phone_number&app_absent=0" target="_blank" class="button fs-1">Marque sua Consulta</a>
+            <div class="nav bg-dark">
+                <ul class="navlinks flex">
+                    <li><a href="/clinica.html">A Clínica</a></li>
+                    <li><a href="/tratamentos.html">Tratamentos</a></li>
+                </ul>
+                <ul class="navbuttons flex">
+                    <li>
+                        <a href="tel:35998297477" class="button fs-1">(35) 998297477</a>
+                    </li>
+                    <li>
+                        <a href="https://web.whatsapp.com/send/?phone=5535998297477&text=Ol%C3%A1%2C+vim+do+site+de+voc%C3%AAs+e+queria+entrar+em+contato&type=phone_number&app_absent=0"
+                            target="_blank" class="button fs-1">Marque sua Consulta</a>
+                    </li>
+                </ul>
             </div>
-            <img src="assets/menu.svg" alt="Menu" class="menu">
+            <img src="assets/menu.svg" alt="Menu" class="menu" onclick="menuClick()">
         </nav>
     </header>
+    <script src="menu.js"></script>
 
     <section id="hero" class="bg-dark">
         <div class="grid container">
@@ -34,7 +46,8 @@
             <figure>
                 <img src="assets/hero-background.jpg" alt="">
             </figure>
-            <p class="ff-lora fs-2">Que bom que você está aqui! Com o nosso conceito intergeracional, especializado nas áreas da medicina
+            <p class="ff-lora fs-2">Que bom que você está aqui! Com o nosso conceito intergeracional, especializado nas
+                áreas da medicina
                 dentária geral e da estética, acolhemos todos os pacientes - desde a odontopediatria à odontologia
                 geriátrica, adaptamos o nosso tratamento precisamente às suas necessidades.</p>
         </div>
@@ -51,11 +64,13 @@
             <div class="grid secondary-grid">
                 <h2>Nossa Clínica</h2>
                 <div class="flex">
-                    <p class="ff-lora fs-2">Um ambiente descontraído, interação pessoal com nossos pacientes e uma equipe com o coração no
+                    <p class="ff-lora fs-2">Um ambiente descontraído, interação pessoal com nossos pacientes e uma
+                        equipe com o coração no
                         lugar
                         certo - é isso que nos diferencia. E estamos orgulhosos disso.</p>
 
-                    <p class="ff-lora fs-2">Com grande atenção aos detalhes, nosso belo consultório foi totalmente reformado no início de 2021. Venha nos visitar!</p>
+                    <p class="ff-lora fs-2">Com grande atenção aos detalhes, nosso belo consultório foi totalmente
+                        reformado no início de 2021. Venha nos visitar!</p>
                 </div>
                 <a href="" class="fs-2 bold featured">Marque sua Consulta</a>
             </div>
@@ -118,7 +133,8 @@
                         </li>
 
                         <li>
-                            <a href="https://web.whatsapp.com/send/?phone=5535998297477&text=Ol%C3%A1%2C+vim+do+site+de+voc%C3%AAs+e+queria+entrar+em+contato&type=phone_number&app_absent=0" target="_blank" class="featured">Marque uma Consulta</a>
+                            <a href="https://web.whatsapp.com/send/?phone=5535998297477&text=Ol%C3%A1%2C+vim+do+site+de+voc%C3%AAs+e+queria+entrar+em+contato&type=phone_number&app_absent=0"
+                                target="_blank" class="featured">Marque uma Consulta</a>
                         </li>
                     </ul>
                 </li>
@@ -146,7 +162,8 @@
         <div class="grid container">
             <div class="left flex flex-column">
                 <h4 class="ff-lora fs-0">Contato</h4>
-                <a href="https://maps.app.goo.gl/WWmZqR8xH9AUKaee7" target="_blank" class="flex flex-column featured-inline">
+                <a href="https://maps.app.goo.gl/WWmZqR8xH9AUKaee7" target="_blank"
+                    class="flex flex-column featured-inline">
                     <span class="bold">Odonto Prime Clinic</span>
                     <span class="fs-1">Praça João Pinheiro, 132</span>
                     <span class="fs-1">Centro</span>
@@ -164,7 +181,8 @@
     </section>
     <script src="index.js"></script>
 
-    <a href="https://wa.me/5535998297477?text=Ol%C3%A1%2C%20vim%20pelo%20site%20de%20voc%C3%AAs%20e%20queria%20entrar%20em%20contato" target="_blank" class="whatsapp-button">
+    <a href="https://wa.me/5535998297477?text=Ol%C3%A1%2C%20vim%20pelo%20site%20de%20voc%C3%AAs%20e%20queria%20entrar%20em%20contato"
+        target="_blank" class="whatsapp-button">
         <img src="assets/whatsapp.png" alt="">
     </a>
 </body>

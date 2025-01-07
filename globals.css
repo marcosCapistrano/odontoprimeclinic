@@ -68,31 +68,84 @@ header {
     background-color: var(--color-dark);
 }
 
-header nav {
+header nav.container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 10lvh;
+    justify-content: space-between;
+    gap: 4rem;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-header .navbuttons {
-    display: none;
+header .nav {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100lvh;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
 }
 
-header .navbuttons
+header .nav.show {
+    transform: translateX(0);
+}
+
+header .nav .navlinks {
+    padding-top: 2rem;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 2rem;
+    gap: 1rem;
+}
+
+header .nav .navbuttons {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: end;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
 
 header .logo {
     max-width: 140px;
 }
 
-@media (min-width: 65rem) {
-
-header .logo {
-    max-width: 300px;
+header .menu {
+    cursor: pointer;
 }
-    header .navbuttons {
+
+@media (min-width: 65rem) {
+    header .logo {
+        max-width: 300px;
+    }
+
+    header .nav {
+        position: static;
         display: flex;
+        width: 100%;
         gap: 1rem;
+        justify-content: space-between;
+        transform: translateX(0);
+        flex-direction: row;
+        height: min-content;
+
+    }
+
+    header .nav .navlinks {
+        padding-top: 0;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    header .nav .navbuttons {
+        padding-top: 0;
+        align-items: center;
+        flex-direction: row;
     }
 
     header .menu {
@@ -120,7 +173,7 @@ header .logo {
 .whatsapp-button {
     position: fixed;
     bottom: 50%;
-    right:4rem;
+    right: 4rem;
     max-width: 100px;
     background-color: #dbdbdb;
     padding: 1rem;
