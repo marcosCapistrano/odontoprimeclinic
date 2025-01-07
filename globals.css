@@ -116,6 +116,7 @@ header .logo {
 
 /* ------------- /CONTACT ---------------- */
 
+
 .whatsapp-button {
     position: fixed;
     bottom: 50%;
@@ -124,4 +125,11 @@ header .logo {
     background-color: #dbdbdb;
     padding: 1rem;
     border-radius: 100%;
+    display: none;
+}
+
+@media (min-width: 65rem) {
+    .whatsapp-button {
+        display: block;
+    }
 }
