@@ -79,6 +79,8 @@ header .navbuttons {
     display: none;
 }
 
+header .navbuttons
+
 header .logo {
     max-width: 140px;
 }
@@ -89,7 +91,8 @@ header .logo {
     max-width: 300px;
 }
     header .navbuttons {
-        display: block;
+        display: flex;
+        gap: 1rem;
     }
 
     header .menu {
@@ -112,3 +115,13 @@ header .logo {
 }
 
 /* ------------- /CONTACT ---------------- */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 50%;
+    right:4rem;
+    max-width: 100px;
+    background-color: #dbdbdb;
+    padding: 1rem;
+    border-radius: 100%;
+}

@@ -19,7 +19,6 @@ for (let figure of figures) {
         newY = 5 - newY;
     }
 
-
     figure.style.transform = `translate(${(rect.width + 20) * count}px, ${newY}px)`
     figure.newY = newY;
     count++;
