@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-dark);
+}
+
+:root {
+    --color-dark: #040F0F;
+    --color-darker: #090B0B;
+    --color-accent: #2BA84A;
+    --color-light: #ECEBF3;
+}
+
+.bg-darker {
+    background-color: var(--color-darker);
+    color: var(--color-light);
+}
+
+.bg-dark {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.bg-light {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+img {
+    max-width: 100%;
+    border-radius: .5rem;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ------------- HEADER ---------------- */
+
+header {
+    background-color: var(--color-dark);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10lvh;
+}
+
+header .navbuttons {
+    display: none;
+}
+
+header .logo {
+    max-width: 140px;
+}
+
+@media (min-width: 65rem) {
+
+header .logo {
+    max-width: 300px;
+}
+    header .navbuttons {
+        display: block;
+    }
+
+    header .menu {
+        display: none;
+    }
+}
+
+/* ------------- /HEADER ---------------- */
+
+/* ------------- CONTACT ---------------- */
+
+#contact .grid {
+    gap: 2rem;
+}
+
+#contact .grid .left,
+#contact .grid .right {
+    grid-column: span 6;
+    gap: 1rem;
+}
+
+/* ------------- /CONTACT ---------------- */
