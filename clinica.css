@@ -44,6 +44,12 @@
     position: absolute;
 }
 
+@media (min-width: 65rem) {
+#gallery .gallery-container {
+    aspect-ratio: 8/3;
+}
+}
+
 /* ----------- /GALLERY ----------------- */
 
 /* ----------- TECH ---------------- */
