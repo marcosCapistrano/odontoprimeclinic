@@ -11,10 +11,16 @@ body {
 }
 
 :root {
+    --color-black: #000000;
     --color-dark: #040F0F;
     --color-darker: #090B0B;
     --color-accent: #2BA84A;
     --color-light: #ECEBF3;
+}
+
+.bg-darkest {
+    background-color: var(--color-black);
+    color: var(--color-light);
 }
 
 .bg-darker {
