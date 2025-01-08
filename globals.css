@@ -174,7 +174,7 @@ header .menu {
     position: fixed;
     bottom: 50%;
     right: 4rem;
-    max-width: 100px;
+    max-width: 80px;
     background-color: #dbdbdb;
     padding: 1rem;
     border-radius: 100%;

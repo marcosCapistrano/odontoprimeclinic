@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Clínica - Odonto Prime Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="tratamentos.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="font.css">
+</head>
+
+<body class="ff-inter" style="position: relative;">
+    <header class="bg-darker">
+        <nav class="container">
+            <img src="assets/logo/logo-mobile.svg" alt="Odonto Prime Clinic" class="logo">
+            <div class="nav bg-dark">
+                <ul class="navlinks flex">
+                    <img src="assets/x.svg" alt="Menu" class="menu" onclick="menuClick()">
+                    <li><a href="/clinica.html">A Clínica</a></li>
+                    <li><a href="/tratamentos.html">Tratamentos</a></li>
+                </ul>
+                <ul class="navbuttons flex">
+                    <li>
+                        <a href="tel:35998297477" class="button fs-1">(35) 998297477</a>
+                    </li>
+                    <li>
+                        <a href="https://web.whatsapp.com/send/?phone=5535998297477&text=Ol%C3%A1%2C+vim+do+site+de+voc%C3%AAs+e+queria+entrar+em+contato&type=phone_number&app_absent=0"
+                            target="_blank" class="button fs-1">Marque sua Consulta</a>
+                    </li>
+                </ul>
+            </div>
+            <img src="assets/menu.svg" alt="Menu" class="menu" onclick="menuClick()">
+        </nav>
+    </header>
+
+    <script src="menu.js"></script>
+
+    <section id="hero" class="bg-dark">
+        <div class="grid container">
+            <h1>Tratamentos Oferecidos</h1>
+            <div class="flex">
+                <p>Ficou claro desde o início: este deveria ser um lugar onde todos se sentissem em boas mãos desde o
+                    primeiro minuto. Porque temos a convicção de que uma visita ao dentista também pode ser algo
+                    prazeroso.
+                    O que é preciso? Um ambiente descontraído de prática em um ambiente acolhedor, uma equipe motivada e
+                    com
+                    o coração no lugar certo e o melhor tratamento e cuidado possível para você.
+                </p>
+                <p>Nossos métodos de tratamento são adaptados às suas necessidades individuais, usando a mais recente
+                    tecnologia e métodos. E para continuarmos melhorando, o treinamento regular e a curiosidade pelos
+                    resultados das pesquisas odontológicas fazem parte natural do nosso trabalho diário.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="treatments" class="bg-dark">
+        <div class="container flex flex-column">
+            <div class="treatment grid">
+                <figure>
+                    <img src="assets/hero-background.jpg" alt="Implantes Unitários">
+                </figure>
+                <h3>Implantes Unitários</h3>
+                <p>Implantes unitários são dispositivos fixos utilizados para substituir dentes perdidos, proporcionando
+                    uma aparência natural e restaurando a função mastigatória.</p>
+            </div>
+
+            <div class="treatment grid">
+                <figure>
+                    <img src="assets/hero-background.jpg" alt="Prótese Semi-Fixa">
+                </figure>
+                <h3>Prótese Semi-Fixa</h3>
+                <p>Próteses semi-fixas são soluções que combinam estabilidade e conforto, oferecendo uma aparência mais
+                    natural e melhor adaptação ao paciente.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="bg-dark">
+        <div class="grid container">
+            <div class="left flex flex-column">
+                <h4 class="ff-lora fs-0">Contato</h4>
+                <a href="https://maps.app.goo.gl/WWmZqR8xH9AUKaee7" target="_blank"
+                    class="flex flex-column featured-inline">
+                    <span class="bold">Odonto Prime Clinic</span>
+                    <span class="fs-1">Praça João Pinheiro, 132</span>
+                    <span class="fs-1">Centro</span>
+                    <span class="fs-1">Pouso Alegre</span>
+                </a>
+                <a href="tel:35998297477" class="fs-1 featured-inline">Telefone: (35) 9 9829-7477</a>
+            </div>
+
+            <div class="right flex flex-column">
+                <h4 class="ff-lora fs-0">Horário Comercial</h4>
+                <span class="fs-1 bold">Segunda a Sexta</span>
+                <span class="fs-1">8h00 - 18h00</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+    <a href="https://wa.me/5535998297477?text=Ol%C3%A1%2C%20vim%20pelo%20site%20de%20voc%C3%AAs%20e%20queria%20entrar%20em%20contato"
+        target="_blank" class="whatsapp-button">
+        <img src="assets/whatsapp.png" alt="">
+    </a>
+</body>
+
+</html>
