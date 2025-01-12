@@ -173,6 +173,13 @@ header .menu {
     gap: 1rem;
 }
 
+@media (min-width: 65rem) {
+    #contact .grid .right {
+        grid-column: span 5;
+        justify-self: end;
+    }
+}
+
 /* ------------- /CONTACT ---------------- */
 
 
