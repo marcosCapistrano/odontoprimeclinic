@@ -1,6 +1,6 @@
 /* ------------- HERO ---------------- */
 #hero .grid {
-    gap: 1rem;
+    gap: 3rem;
     grid-template-rows: min-content 1fr;
 }
 
@@ -55,7 +55,7 @@
 /* ----------- TECH ---------------- */
 
 #tech .grid {
-    gap: 1rem;
+    gap: 3rem;
     align-items: start;
     justify-items: start;
     grid-template-rows: min-content 1fr;
