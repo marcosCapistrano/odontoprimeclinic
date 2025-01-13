@@ -35,8 +35,9 @@
 /* ----------- GALLERY ----------------- */
 #gallery .gallery-container {
     position: relative;   
-    aspect-ratio: 8/9;
     overflow: hidden;
+    height: 500px;
+    max-height: 480px;
 }
 
 #gallery .gallery-container figure {
@@ -46,7 +47,8 @@
 
 @media (min-width: 65rem) {
 #gallery .gallery-container {
-    aspect-ratio: 8/3;
+    width: 100%;
+    max-height: 600px;
 }
 }
 
