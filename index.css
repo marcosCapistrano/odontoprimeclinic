@@ -10,11 +10,6 @@
     grid-column: span 6;
 }
 
-#hero figure {
-    transform: translateX(-15%);
-}
-
-
 @media (min-width: 65rem) {
     #hero h1 {
         grid-row: 1/2;
@@ -58,7 +53,7 @@
 
 #clinic .primary-grid__second {
     grid-row: 1/2;
-    grid-column: 3/7;
+    grid-column: 2/7;
     z-index: 0;
 }
 
