@@ -43,6 +43,10 @@
 }
 
 @media (min-width: 65rem) {
+    #treatments .grid {
+    gap: 3rem;
+    grid-template-rows: min-content 1fr;
+    }
     #treatments .treatment:nth-child(even) figure {
         grid-column: 1/6;
         grid-row: 1/3
