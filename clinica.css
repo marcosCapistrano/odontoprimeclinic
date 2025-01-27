@@ -37,27 +37,6 @@
 
 /* ---------- /HERO ------------ */
 
-/* ----------- GALLERY ----------------- */
-#gallery .gallery-container {
-    position: relative;   
-    overflow: hidden;
-    height: 500px;
-    max-height: 480px;
-}
-
-#gallery .gallery-container figure {
-    max-width: 640px;
-    position: absolute;
-}
-
-@media (min-width: 65rem) {
-#gallery .gallery-container {
-    width: 100%;
-    max-height: 600px;
-}
-}
-
-/* ----------- /GALLERY ----------------- */
 
 /* ----------- TECH ---------------- */
 
